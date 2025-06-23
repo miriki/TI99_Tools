@@ -32,7 +32,6 @@
             tabPage1 = new TabPage();
             pictureBox1 = new PictureBox();
             lbl_Font_Info = new Label();
-            btn_View = new Button();
             btn_Scan = new Button();
             label1 = new Label();
             txt_Files_Directory = new TextBox();
@@ -57,7 +56,6 @@
             // 
             tabPage1.Controls.Add(pictureBox1);
             tabPage1.Controls.Add(lbl_Font_Info);
-            tabPage1.Controls.Add(btn_View);
             tabPage1.Controls.Add(btn_Scan);
             tabPage1.Controls.Add(label1);
             tabPage1.Controls.Add(txt_Files_Directory);
@@ -86,15 +84,6 @@
             lbl_Font_Info.TabIndex = 5;
             lbl_Font_Info.Text = "Font: \"xxxxxx\" for >xx (xx) characters starting at >xx (xx) with >xx (xx) bytes per character";
             lbl_Font_Info.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // btn_View
-            // 
-            btn_View.Location = new Point(87, 36);
-            btn_View.Name = "btn_View";
-            btn_View.Size = new Size(75, 26);
-            btn_View.TabIndex = 4;
-            btn_View.Text = "view";
-            btn_View.UseVisualStyleBackColor = true;
             // 
             // btn_Scan
             // 
@@ -153,7 +142,6 @@
             Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
@@ -169,7 +157,6 @@
         private TabPage tabPage2;
         private Label label1;
         private Button btn_Scan;
-        private Button btn_View;
         private Label lbl_Font_Info;
         private PictureBox pictureBox1;
         private ListBox lst_Filenames;
