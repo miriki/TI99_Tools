@@ -133,10 +133,10 @@ namespace TI99_Char_Tools
                 string selectedFile = Path.Combine(txt_Files_Directory.Text, lst_Filenames.SelectedItem.ToString());
                 if (File.Exists(selectedFile))
                 {
-                    string[] lines = File.ReadAllLines(selectedFile).ToArray();
-                    var filteredLines = lines.Where(line => !line.TrimStart().StartsWith("*")).ToList();
+                    string[] lines = File.ReadAllLines(selectedFile);
+                    var filteredLines = lines.Where(line => !line.TrimStart().StartsWith("*") && !string.IsNullOrWhiteSpace(line)).ToList();
                     string fil_header = filteredLines.FirstOrDefault(line => !Regex.IsMatch(line, @"^\s"));
-                    string pattern1 = @"^([A-Za-z][A-Za-z0-9]{0,5})\s+BYTE\s+>([0-9A-Fa-f]{2}),>([0-9A-Fa-f]{2}),>([0-9A-Fa-f]{2}),>([0-9A-Fa-f]{2})";
+                    string pattern1 = @"^([A-Za-z][A-Za-z0-9_]{0,5})\s+BYTE\s+>([0-9A-Fa-f]{2}),>([0-9A-Fa-f]{2}),>([0-9A-Fa-f]{2}),>([0-9A-Fa-f]{2})";
                     var match1 = Regex.Match(fil_header, pattern1, RegexOptions.IgnoreCase);
                     if (match1.Success)
                     {
@@ -144,23 +144,24 @@ namespace TI99_Char_Tools
                         char1 = Convert.ToInt32(match1.Groups[2].Value, 16);
                         charCount = Convert.ToInt32(match1.Groups[3].Value, 16);
                         bytesPerChar = Convert.ToInt32(match1.Groups[4].Value, 16);
+                        lbl_Font_Info.Text = $"Font: '{fontString}' for >{match1.Groups[3].Value} ({charCount}) characters starting at >{match1.Groups[2].Value} ({char1}) with >{match1.Groups[4].Value} ({bytesPerChar}) bytes per character";
                         filler = Convert.ToInt32(match1.Groups[5].Value, 16);
                         Debug.WriteLine("Header: " + fil_header);
                         Debug.WriteLine($"Fontzeichenfolge : {fontString}");
                         Debug.WriteLine($"Char1             : >{match1.Groups[2].Value} ({char1})");
                         Debug.WriteLine($"CharCount         : >{match1.Groups[3].Value} ({charCount})");
                         Debug.WriteLine($"Bytes pro Zeichen : >{match1.Groups[4].Value} ({bytesPerChar})");
+                        List<byte[]> fil_data = ParseDataLines(filteredLines);
+                        // foreach (var b in fil_data)
+                        // {
+                        // Debug.WriteLine(BitConverter.ToString(b));
+                        // }
+                        pictureBox1.Image = DrawGlyphsOnBitmap(CreateBitmapFromData(fil_data), fil_data, char1, charCount, bytesPerChar);
                     }
                     else
                     {
                         Console.WriteLine("Header-Zeile konnte nicht analysiert werden.");
                     }
-                    List<byte[]> fil_data = ParseDataLines(filteredLines);
-                    foreach (var b in fil_data)
-                    {
-                        Debug.WriteLine(BitConverter.ToString(b));
-                    }
-                    pictureBox1.Image = DrawGlyphsOnBitmap(CreateBitmapFromData(fil_data), fil_data, char1, charCount, bytesPerChar);
                 }
                 else
                 {
