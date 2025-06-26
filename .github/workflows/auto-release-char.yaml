@@ -26,6 +26,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Verzeichnis anzeigen (Debug)
+      run: |
+        pwd
+        ls -R
+
     # 🔧 2. MSBuild konfigurieren (damit wir Projekte kompilieren können)
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
