@@ -32,353 +32,348 @@ namespace TI99_Tools
         /// </summary>
         private void InitializeComponent()
         {
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            btn_Analyze = new Button();
-            groupBox4 = new GroupBox();
-            rbt_720k = new RadioButton();
-            rbt_360k = new RadioButton();
-            rbt_180k = new RadioButton();
-            rbt_90k = new RadioButton();
-            lst_Image_Analyze = new ListBox();
-            groupBox3 = new GroupBox();
-            rbt_T80 = new RadioButton();
-            rbt_T40 = new RadioButton();
-            groupBox2 = new GroupBox();
-            rbt_QD = new RadioButton();
-            rbt_DD = new RadioButton();
-            rbt_SD = new RadioButton();
-            groupBox1 = new GroupBox();
-            rbt_DS = new RadioButton();
-            rbt_SS = new RadioButton();
-            tabPage2 = new TabPage();
-            btn_Directory = new Button();
-            lst_Image_Directory = new ListBox();
-            lst_Image_Files = new ListBox();
-            label1 = new Label();
-            txt_Files_Directory = new TextBox();
-            btn_Scan = new Button();
-            tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
-            tabPage2.SuspendLayout();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btn_Analyze = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rbt_720k = new System.Windows.Forms.RadioButton();
+            this.rbt_360k = new System.Windows.Forms.RadioButton();
+            this.rbt_180k = new System.Windows.Forms.RadioButton();
+            this.rbt_90k = new System.Windows.Forms.RadioButton();
+            this.lst_Image_Analyze = new System.Windows.Forms.ListBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbt_T80 = new System.Windows.Forms.RadioButton();
+            this.rbt_T40 = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbt_QD = new System.Windows.Forms.RadioButton();
+            this.rbt_DD = new System.Windows.Forms.RadioButton();
+            this.rbt_SD = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbt_DS = new System.Windows.Forms.RadioButton();
+            this.rbt_SS = new System.Windows.Forms.RadioButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btn_Directory = new System.Windows.Forms.Button();
+            this.lst_Image_Directory = new System.Windows.Forms.ListBox();
+            this.lst_Image_Files = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_Files_Directory = new System.Windows.Forms.TextBox();
+            this.btn_Scan = new System.Windows.Forms.Button();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(355, 12);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(826, 612);
-            tabControl1.TabIndex = 0;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(355, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(826, 612);
+            this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(btn_Analyze);
-            tabPage1.Controls.Add(groupBox4);
-            tabPage1.Controls.Add(lst_Image_Analyze);
-            tabPage1.Controls.Add(groupBox3);
-            tabPage1.Controls.Add(groupBox2);
-            tabPage1.Controls.Add(groupBox1);
-            tabPage1.Location = new Point(4, 27);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(818, 581);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Analyze";
-            tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Controls.Add(this.btn_Analyze);
+            this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Controls.Add(this.lst_Image_Analyze);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(818, 581);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Analyze";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btn_Analyze
             // 
-            btn_Analyze.Location = new Point(716, 6);
-            btn_Analyze.Name = "btn_Analyze";
-            btn_Analyze.Size = new Size(96, 26);
-            btn_Analyze.TabIndex = 8;
-            btn_Analyze.Text = "Analyze";
-            btn_Analyze.UseVisualStyleBackColor = true;
-            btn_Analyze.Click += btn_Analyze_Click;
+            this.btn_Analyze.Location = new System.Drawing.Point(716, 6);
+            this.btn_Analyze.Name = "btn_Analyze";
+            this.btn_Analyze.Size = new System.Drawing.Size(96, 26);
+            this.btn_Analyze.TabIndex = 8;
+            this.btn_Analyze.Text = "Analyze";
+            this.btn_Analyze.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(rbt_720k);
-            groupBox4.Controls.Add(rbt_360k);
-            groupBox4.Controls.Add(rbt_180k);
-            groupBox4.Controls.Add(rbt_90k);
-            groupBox4.Location = new Point(287, 6);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(126, 80);
-            groupBox4.TabIndex = 5;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "cap K";
+            this.groupBox4.Controls.Add(this.rbt_720k);
+            this.groupBox4.Controls.Add(this.rbt_360k);
+            this.groupBox4.Controls.Add(this.rbt_180k);
+            this.groupBox4.Controls.Add(this.rbt_90k);
+            this.groupBox4.Location = new System.Drawing.Point(287, 6);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(126, 80);
+            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "cap K";
             // 
             // rbt_720k
             // 
-            rbt_720k.AutoSize = true;
-            rbt_720k.Location = new Point(65, 53);
-            rbt_720k.Name = "rbt_720k";
-            rbt_720k.Size = new Size(53, 22);
-            rbt_720k.TabIndex = 3;
-            rbt_720k.TabStop = true;
-            rbt_720k.Text = "720";
-            rbt_720k.UseVisualStyleBackColor = true;
+            this.rbt_720k.AutoSize = true;
+            this.rbt_720k.Location = new System.Drawing.Point(65, 53);
+            this.rbt_720k.Name = "rbt_720k";
+            this.rbt_720k.Size = new System.Drawing.Size(53, 22);
+            this.rbt_720k.TabIndex = 3;
+            this.rbt_720k.TabStop = true;
+            this.rbt_720k.Text = "720";
+            this.rbt_720k.UseVisualStyleBackColor = true;
             // 
             // rbt_360k
             // 
-            rbt_360k.AutoSize = true;
-            rbt_360k.Location = new Point(65, 24);
-            rbt_360k.Name = "rbt_360k";
-            rbt_360k.Size = new Size(53, 22);
-            rbt_360k.TabIndex = 2;
-            rbt_360k.TabStop = true;
-            rbt_360k.Text = "360";
-            rbt_360k.UseVisualStyleBackColor = true;
+            this.rbt_360k.AutoSize = true;
+            this.rbt_360k.Location = new System.Drawing.Point(65, 24);
+            this.rbt_360k.Name = "rbt_360k";
+            this.rbt_360k.Size = new System.Drawing.Size(53, 22);
+            this.rbt_360k.TabIndex = 2;
+            this.rbt_360k.TabStop = true;
+            this.rbt_360k.Text = "360";
+            this.rbt_360k.UseVisualStyleBackColor = true;
             // 
             // rbt_180k
             // 
-            rbt_180k.AutoSize = true;
-            rbt_180k.Location = new Point(6, 53);
-            rbt_180k.Name = "rbt_180k";
-            rbt_180k.Size = new Size(53, 22);
-            rbt_180k.TabIndex = 1;
-            rbt_180k.TabStop = true;
-            rbt_180k.Text = "180";
-            rbt_180k.UseVisualStyleBackColor = true;
+            this.rbt_180k.AutoSize = true;
+            this.rbt_180k.Location = new System.Drawing.Point(6, 53);
+            this.rbt_180k.Name = "rbt_180k";
+            this.rbt_180k.Size = new System.Drawing.Size(53, 22);
+            this.rbt_180k.TabIndex = 1;
+            this.rbt_180k.TabStop = true;
+            this.rbt_180k.Text = "180";
+            this.rbt_180k.UseVisualStyleBackColor = true;
             // 
             // rbt_90k
             // 
-            rbt_90k.AutoSize = true;
-            rbt_90k.Location = new Point(6, 25);
-            rbt_90k.Name = "rbt_90k";
-            rbt_90k.Size = new Size(44, 22);
-            rbt_90k.TabIndex = 0;
-            rbt_90k.TabStop = true;
-            rbt_90k.Text = "90";
-            rbt_90k.UseVisualStyleBackColor = true;
+            this.rbt_90k.AutoSize = true;
+            this.rbt_90k.Location = new System.Drawing.Point(6, 25);
+            this.rbt_90k.Name = "rbt_90k";
+            this.rbt_90k.Size = new System.Drawing.Size(44, 22);
+            this.rbt_90k.TabIndex = 0;
+            this.rbt_90k.TabStop = true;
+            this.rbt_90k.Text = "90";
+            this.rbt_90k.UseVisualStyleBackColor = true;
             // 
             // lst_Image_Analyze
             // 
-            lst_Image_Analyze.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lst_Image_Analyze.FormattingEnabled = true;
-            lst_Image_Analyze.ItemHeight = 19;
-            lst_Image_Analyze.Location = new Point(9, 96);
-            lst_Image_Analyze.Name = "lst_Image_Analyze";
-            lst_Image_Analyze.Size = new Size(803, 479);
-            lst_Image_Analyze.TabIndex = 7;
+            this.lst_Image_Analyze.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lst_Image_Analyze.FormattingEnabled = true;
+            this.lst_Image_Analyze.ItemHeight = 19;
+            this.lst_Image_Analyze.Location = new System.Drawing.Point(9, 96);
+            this.lst_Image_Analyze.Name = "lst_Image_Analyze";
+            this.lst_Image_Analyze.Size = new System.Drawing.Size(803, 479);
+            this.lst_Image_Analyze.TabIndex = 7;
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(rbt_T80);
-            groupBox3.Controls.Add(rbt_T40);
-            groupBox3.Location = new Point(210, 6);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(71, 80);
-            groupBox3.TabIndex = 4;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "tracks";
+            this.groupBox3.Controls.Add(this.rbt_T80);
+            this.groupBox3.Controls.Add(this.rbt_T40);
+            this.groupBox3.Location = new System.Drawing.Point(210, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(71, 80);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "tracks";
             // 
             // rbt_T80
             // 
-            rbt_T80.AutoSize = true;
-            rbt_T80.Location = new Point(6, 53);
-            rbt_T80.Name = "rbt_T80";
-            rbt_T80.Size = new Size(44, 22);
-            rbt_T80.TabIndex = 1;
-            rbt_T80.TabStop = true;
-            rbt_T80.Text = "80";
-            rbt_T80.UseVisualStyleBackColor = true;
+            this.rbt_T80.AutoSize = true;
+            this.rbt_T80.Location = new System.Drawing.Point(6, 53);
+            this.rbt_T80.Name = "rbt_T80";
+            this.rbt_T80.Size = new System.Drawing.Size(44, 22);
+            this.rbt_T80.TabIndex = 1;
+            this.rbt_T80.Text = "80";
+            this.rbt_T80.UseVisualStyleBackColor = true;
             // 
             // rbt_T40
             // 
-            rbt_T40.AutoSize = true;
-            rbt_T40.Location = new Point(6, 25);
-            rbt_T40.Name = "rbt_T40";
-            rbt_T40.Size = new Size(44, 22);
-            rbt_T40.TabIndex = 0;
-            rbt_T40.TabStop = true;
-            rbt_T40.Text = "40";
-            rbt_T40.UseVisualStyleBackColor = true;
+            this.rbt_T40.AutoSize = true;
+            this.rbt_T40.Checked = true;
+            this.rbt_T40.Location = new System.Drawing.Point(6, 25);
+            this.rbt_T40.Name = "rbt_T40";
+            this.rbt_T40.Size = new System.Drawing.Size(44, 22);
+            this.rbt_T40.TabIndex = 0;
+            this.rbt_T40.TabStop = true;
+            this.rbt_T40.Text = "40";
+            this.rbt_T40.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(rbt_QD);
-            groupBox2.Controls.Add(rbt_DD);
-            groupBox2.Controls.Add(rbt_SD);
-            groupBox2.Location = new Point(83, 6);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(121, 80);
-            groupBox2.TabIndex = 3;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "dens";
+            this.groupBox2.Controls.Add(this.rbt_QD);
+            this.groupBox2.Controls.Add(this.rbt_DD);
+            this.groupBox2.Controls.Add(this.rbt_SD);
+            this.groupBox2.Location = new System.Drawing.Point(83, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(121, 80);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "dens";
             // 
             // rbt_QD
             // 
-            rbt_QD.AutoSize = true;
-            rbt_QD.Location = new Point(61, 24);
-            rbt_QD.Name = "rbt_QD";
-            rbt_QD.Size = new Size(50, 22);
-            rbt_QD.TabIndex = 2;
-            rbt_QD.TabStop = true;
-            rbt_QD.Text = "QD";
-            rbt_QD.UseVisualStyleBackColor = true;
+            this.rbt_QD.AutoSize = true;
+            this.rbt_QD.Location = new System.Drawing.Point(61, 24);
+            this.rbt_QD.Name = "rbt_QD";
+            this.rbt_QD.Size = new System.Drawing.Size(50, 22);
+            this.rbt_QD.TabIndex = 2;
+            this.rbt_QD.Text = "QD";
+            this.rbt_QD.UseVisualStyleBackColor = true;
             // 
             // rbt_DD
             // 
-            rbt_DD.AutoSize = true;
-            rbt_DD.Location = new Point(6, 53);
-            rbt_DD.Name = "rbt_DD";
-            rbt_DD.Size = new Size(50, 22);
-            rbt_DD.TabIndex = 1;
-            rbt_DD.TabStop = true;
-            rbt_DD.Text = "DD";
-            rbt_DD.UseVisualStyleBackColor = true;
+            this.rbt_DD.AutoSize = true;
+            this.rbt_DD.Checked = true;
+            this.rbt_DD.Location = new System.Drawing.Point(6, 53);
+            this.rbt_DD.Name = "rbt_DD";
+            this.rbt_DD.Size = new System.Drawing.Size(50, 22);
+            this.rbt_DD.TabIndex = 1;
+            this.rbt_DD.TabStop = true;
+            this.rbt_DD.Text = "DD";
+            this.rbt_DD.UseVisualStyleBackColor = true;
             // 
             // rbt_SD
             // 
-            rbt_SD.AutoSize = true;
-            rbt_SD.Location = new Point(6, 25);
-            rbt_SD.Name = "rbt_SD";
-            rbt_SD.Size = new Size(49, 22);
-            rbt_SD.TabIndex = 0;
-            rbt_SD.TabStop = true;
-            rbt_SD.Text = "SD";
-            rbt_SD.UseVisualStyleBackColor = true;
+            this.rbt_SD.AutoSize = true;
+            this.rbt_SD.Location = new System.Drawing.Point(6, 25);
+            this.rbt_SD.Name = "rbt_SD";
+            this.rbt_SD.Size = new System.Drawing.Size(49, 22);
+            this.rbt_SD.TabIndex = 0;
+            this.rbt_SD.Text = "SD";
+            this.rbt_SD.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(rbt_DS);
-            groupBox1.Controls.Add(rbt_SS);
-            groupBox1.Location = new Point(6, 6);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(71, 80);
-            groupBox1.TabIndex = 2;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "sides";
+            this.groupBox1.Controls.Add(this.rbt_DS);
+            this.groupBox1.Controls.Add(this.rbt_SS);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(71, 80);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "sides";
             // 
             // rbt_DS
             // 
-            rbt_DS.AutoSize = true;
-            rbt_DS.Location = new Point(6, 53);
-            rbt_DS.Name = "rbt_DS";
-            rbt_DS.Size = new Size(49, 22);
-            rbt_DS.TabIndex = 1;
-            rbt_DS.TabStop = true;
-            rbt_DS.Text = "DS";
-            rbt_DS.UseVisualStyleBackColor = true;
+            this.rbt_DS.AutoSize = true;
+            this.rbt_DS.Checked = true;
+            this.rbt_DS.Location = new System.Drawing.Point(6, 53);
+            this.rbt_DS.Name = "rbt_DS";
+            this.rbt_DS.Size = new System.Drawing.Size(49, 22);
+            this.rbt_DS.TabIndex = 1;
+            this.rbt_DS.TabStop = true;
+            this.rbt_DS.Text = "DS";
+            this.rbt_DS.UseVisualStyleBackColor = true;
             // 
             // rbt_SS
             // 
-            rbt_SS.AutoSize = true;
-            rbt_SS.Location = new Point(6, 25);
-            rbt_SS.Name = "rbt_SS";
-            rbt_SS.Size = new Size(48, 22);
-            rbt_SS.TabIndex = 0;
-            rbt_SS.TabStop = true;
-            rbt_SS.Text = "SS";
-            rbt_SS.UseVisualStyleBackColor = true;
+            this.rbt_SS.AutoSize = true;
+            this.rbt_SS.Location = new System.Drawing.Point(6, 25);
+            this.rbt_SS.Name = "rbt_SS";
+            this.rbt_SS.Size = new System.Drawing.Size(48, 22);
+            this.rbt_SS.TabIndex = 0;
+            this.rbt_SS.Text = "SS";
+            this.rbt_SS.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(btn_Directory);
-            tabPage2.Controls.Add(lst_Image_Directory);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(818, 584);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Directory";
-            tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Controls.Add(this.btn_Directory);
+            this.tabPage2.Controls.Add(this.lst_Image_Directory);
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(818, 581);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Directory";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btn_Directory
             // 
-            btn_Directory.Location = new Point(716, 6);
-            btn_Directory.Name = "btn_Directory";
-            btn_Directory.Size = new Size(96, 23);
-            btn_Directory.TabIndex = 9;
-            btn_Directory.Text = "Directory";
-            btn_Directory.UseVisualStyleBackColor = true;
-            btn_Directory.Click += btn_Directory_Click;
+            this.btn_Directory.Location = new System.Drawing.Point(716, 6);
+            this.btn_Directory.Name = "btn_Directory";
+            this.btn_Directory.Size = new System.Drawing.Size(96, 23);
+            this.btn_Directory.TabIndex = 9;
+            this.btn_Directory.Text = "Directory";
+            this.btn_Directory.UseVisualStyleBackColor = true;
             // 
             // lst_Image_Directory
             // 
-            lst_Image_Directory.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lst_Image_Directory.FormattingEnabled = true;
-            lst_Image_Directory.ItemHeight = 19;
-            lst_Image_Directory.Location = new Point(6, 39);
-            lst_Image_Directory.Name = "lst_Image_Directory";
-            lst_Image_Directory.Size = new Size(807, 536);
-            lst_Image_Directory.TabIndex = 8;
+            this.lst_Image_Directory.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lst_Image_Directory.FormattingEnabled = true;
+            this.lst_Image_Directory.ItemHeight = 19;
+            this.lst_Image_Directory.Location = new System.Drawing.Point(6, 39);
+            this.lst_Image_Directory.Name = "lst_Image_Directory";
+            this.lst_Image_Directory.Size = new System.Drawing.Size(807, 536);
+            this.lst_Image_Directory.TabIndex = 8;
             // 
             // lst_Image_Files
             // 
-            lst_Image_Files.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lst_Image_Files.FormattingEnabled = true;
-            lst_Image_Files.ItemHeight = 19;
-            lst_Image_Files.Location = new Point(12, 69);
-            lst_Image_Files.Name = "lst_Image_Files";
-            lst_Image_Files.SelectionMode = SelectionMode.MultiExtended;
-            lst_Image_Files.Size = new Size(337, 555);
-            lst_Image_Files.TabIndex = 7;
-            lst_Image_Files.MouseDoubleClick += lst_Image_Files_MouseDoubleClick;
+            this.lst_Image_Files.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lst_Image_Files.FormattingEnabled = true;
+            this.lst_Image_Files.ItemHeight = 19;
+            this.lst_Image_Files.Location = new System.Drawing.Point(12, 69);
+            this.lst_Image_Files.Name = "lst_Image_Files";
+            this.lst_Image_Files.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.lst_Image_Files.Size = new System.Drawing.Size(337, 555);
+            this.lst_Image_Files.TabIndex = 7;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(14, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(254, 18);
-            label1.TabIndex = 8;
-            label1.Text = "check disk images files in directory:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(254, 18);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "check disk images files in directory:";
             // 
             // txt_Files_Directory
             // 
-            txt_Files_Directory.Location = new Point(14, 33);
-            txt_Files_Directory.Name = "txt_Files_Directory";
-            txt_Files_Directory.Size = new Size(335, 26);
-            txt_Files_Directory.TabIndex = 9;
-            txt_Files_Directory.Text = "c:\\Users\\mritt\\AppData\\Roaming\\TI99MAME\\ti99_dsk\\check\\";
+            this.txt_Files_Directory.Location = new System.Drawing.Point(14, 33);
+            this.txt_Files_Directory.Name = "txt_Files_Directory";
+            this.txt_Files_Directory.Size = new System.Drawing.Size(335, 26);
+            this.txt_Files_Directory.TabIndex = 9;
+            this.txt_Files_Directory.Text = "c:\\Users\\mritt\\AppData\\Roaming\\TI99MAME\\ti99_dsk\\check\\";
             // 
             // btn_Scan
             // 
-            btn_Scan.Location = new Point(274, 8);
-            btn_Scan.Name = "btn_Scan";
-            btn_Scan.Size = new Size(75, 26);
-            btn_Scan.TabIndex = 10;
-            btn_Scan.Text = "scan";
-            btn_Scan.UseVisualStyleBackColor = true;
-            btn_Scan.Click += btn_Scan_Click;
+            this.btn_Scan.Location = new System.Drawing.Point(274, 8);
+            this.btn_Scan.Name = "btn_Scan";
+            this.btn_Scan.Size = new System.Drawing.Size(75, 26);
+            this.btn_Scan.TabIndex = 10;
+            this.btn_Scan.Text = "scan";
+            this.btn_Scan.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(9F, 18F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 636);
-            Controls.Add(btn_Scan);
-            Controls.Add(txt_Files_Directory);
-            Controls.Add(label1);
-            Controls.Add(lst_Image_Files);
-            Controls.Add(tabControl1);
-            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4);
-            Name = "Form1";
-            Text = "Form1";
-            tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            tabPage2.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1184, 636);
+            this.Controls.Add(this.btn_Scan);
+            this.Controls.Add(this.txt_Files_Directory);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lst_Image_Files);
+            this.Controls.Add(this.tabControl1);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

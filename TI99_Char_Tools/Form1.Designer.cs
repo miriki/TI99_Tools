@@ -31,124 +31,111 @@ namespace TI99_Tools
         /// </summary>
         private void InitializeComponent()
         {
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            pictureBox1 = new PictureBox();
-            lbl_Font_Info = new Label();
-            btn_Scan = new Button();
-            label1 = new Label();
-            txt_Files_Directory = new TextBox();
-            lst_Filenames = new ListBox();
-            tabPage2 = new TabPage();
-            tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_Font_Info = new System.Windows.Forms.Label();
+            this.btn_Scan = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_Files_Directory = new System.Windows.Forms.TextBox();
+            this.lst_Filenames = new System.Windows.Forms.ListBox();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(12, 12);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1240, 612);
-            tabControl1.TabIndex = 0;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1240, 612);
+            this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(pictureBox1);
-            tabPage1.Controls.Add(lbl_Font_Info);
-            tabPage1.Controls.Add(btn_Scan);
-            tabPage1.Controls.Add(label1);
-            tabPage1.Controls.Add(txt_Files_Directory);
-            tabPage1.Controls.Add(lst_Filenames);
-            tabPage1.Location = new Point(4, 27);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1232, 581);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "View";
-            tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Controls.Add(this.pictureBox1);
+            this.tabPage1.Controls.Add(this.lbl_Font_Info);
+            this.tabPage1.Controls.Add(this.btn_Scan);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.txt_Files_Directory);
+            this.tabPage1.Controls.Add(this.lst_Filenames);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1232, 581);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "View";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(204, 64);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1024, 512);
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(204, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1024, 512);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // lbl_Font_Info
             // 
-            lbl_Font_Info.Location = new Point(204, 38);
-            lbl_Font_Info.Name = "lbl_Font_Info";
-            lbl_Font_Info.Size = new Size(768, 23);
-            lbl_Font_Info.TabIndex = 5;
-            lbl_Font_Info.Text = "Font: \"xxxxxx\" for >xx (xx) characters starting at >xx (xx) with >xx (xx) bytes per character";
-            lbl_Font_Info.TextAlign = ContentAlignment.MiddleLeft;
+            this.lbl_Font_Info.Location = new System.Drawing.Point(204, 38);
+            this.lbl_Font_Info.Name = "lbl_Font_Info";
+            this.lbl_Font_Info.Size = new System.Drawing.Size(768, 23);
+            this.lbl_Font_Info.TabIndex = 5;
+            this.lbl_Font_Info.Text = "Font: \"xxxxxx\" for >xx (xx) characters starting at >xx (xx) with >xx (xx) bytes p" +
+    "er character";
+            this.lbl_Font_Info.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btn_Scan
             // 
-            btn_Scan.Location = new Point(6, 36);
-            btn_Scan.Name = "btn_Scan";
-            btn_Scan.Size = new Size(75, 26);
-            btn_Scan.TabIndex = 3;
-            btn_Scan.Text = "scan";
-            btn_Scan.UseVisualStyleBackColor = true;
-            btn_Scan.Click += btn_Scan_Click;
+            this.btn_Scan.Location = new System.Drawing.Point(6, 36);
+            this.btn_Scan.Name = "btn_Scan";
+            this.btn_Scan.Size = new System.Drawing.Size(75, 26);
+            this.btn_Scan.TabIndex = 3;
+            this.btn_Scan.Text = "scan";
+            this.btn_Scan.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(78, 18);
-            label1.TabIndex = 1;
-            label1.Text = "files in dir:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "files in dir:";
             // 
             // txt_Files_Directory
             // 
-            txt_Files_Directory.Location = new Point(90, 6);
-            txt_Files_Directory.Name = "txt_Files_Directory";
-            txt_Files_Directory.Size = new Size(1138, 26);
-            txt_Files_Directory.TabIndex = 0;
-            txt_Files_Directory.Text = "c:\\Users\\mritt\\Downloads\\Emulators\\TI99MAME\\Dev - Assembler\\Fonts\\";
+            this.txt_Files_Directory.Location = new System.Drawing.Point(90, 6);
+            this.txt_Files_Directory.Name = "txt_Files_Directory";
+            this.txt_Files_Directory.Size = new System.Drawing.Size(1138, 26);
+            this.txt_Files_Directory.TabIndex = 0;
+            this.txt_Files_Directory.Text = "c:\\Users\\mritt\\Downloads\\Emulators\\TI99MAME\\Dev - Assembler\\Fonts\\";
             // 
             // lst_Filenames
             // 
-            lst_Filenames.FormattingEnabled = true;
-            lst_Filenames.ItemHeight = 18;
-            lst_Filenames.Location = new Point(6, 68);
-            lst_Filenames.Name = "lst_Filenames";
-            lst_Filenames.Size = new Size(192, 508);
-            lst_Filenames.TabIndex = 7;
-            lst_Filenames.SelectedIndexChanged += lst_Filenames_SelectedIndexChanged;
-            // 
-            // tabPage2
-            // 
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1232, 584);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
-            tabPage2.UseVisualStyleBackColor = true;
+            this.lst_Filenames.FormattingEnabled = true;
+            this.lst_Filenames.ItemHeight = 18;
+            this.lst_Filenames.Location = new System.Drawing.Point(6, 68);
+            this.lst_Filenames.Name = "lst_Filenames";
+            this.lst_Filenames.Size = new System.Drawing.Size(192, 508);
+            this.lst_Filenames.TabIndex = 7;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(9F, 18F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1263, 636);
-            Controls.Add(tabControl1);
-            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4);
-            Name = "Form1";
-            Text = "Form1";
-            tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1263, 636);
+            this.Controls.Add(this.tabControl1);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,7 +144,6 @@ namespace TI99_Tools
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TextBox txt_Files_Directory;
-        private TabPage tabPage2;
         private Label label1;
         private Button btn_Scan;
         private Label lbl_Font_Info;
