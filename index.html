@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>TI99 Tools Dashboard</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
+    th { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h1>TI99 Tools – Release Dashboard</h1>
+  <table id="dashboard">
+    <thead>
+      <tr>
+        <th>Projekt</th>
+        <th>Version</th>
+        <th>Veröffentlicht</th>
+        <th>Download</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    fetch('dashboard.json')
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.querySelector('#dashboard tbody');
+        data.forEach(entry => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${entry.exe}</td>
+            <td>${entry.version}</td>
+            <td>${new Date(entry.published).toLocaleString()}</td>
+            <td><a href="${entry.download}">Download</a></td>
+          `;
+          tbody.appendChild(row);
+        });
+      });
+  </script>
+</body>
+</html>
