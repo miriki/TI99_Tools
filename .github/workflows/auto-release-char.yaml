@@ -8,7 +8,7 @@ name: Auto Release – TI99_Char_Tools
 on:
   push:
     branches:
-      - main  # ⬅️ Nur auslösen, wenn auf den main-Branch gepusht wird
+      - master  # ⬅️ Nur auslösen, wenn auf den main-Branch gepusht wird
 
 # 🌍 Globale Variablen (Umgebungsvariablen), die wir im gesamten Workflow nutzen können
 env:
