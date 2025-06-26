@@ -1,0 +1,20 @@
+[
+  {
+    "name": "TI99_Tools",
+    "version": "disk-v1.0.9308.27537",
+    "published": "2025-06-26T15:18:03Z",
+    "download": "https://github.com/miriki/TI99_Tools/releases/download/disk-v1.0.9308.27537/TI99_Disk_Tools.exe",
+    "exe": "TI99_Char_Tools.exe",
+    "tag_prefix": "char",
+    "description": "Tool for TI-99/4A character sets"
+  },
+  {
+    "name": "TI99_Tools",
+    "version": "disk-v1.0.9308.27537",
+    "published": "2025-06-26T15:18:03Z",
+    "download": "https://github.com/miriki/TI99_Tools/releases/download/disk-v1.0.9308.27537/TI99_Disk_Tools.exe",
+    "exe": "TI99_Disk_Tools.exe",
+    "tag_prefix": "disk",
+    "description": "Tool for TI-99/4A disk-images"
+  }
+]

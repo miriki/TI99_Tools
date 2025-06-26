@@ -1,0 +1,36 @@
+name: Update Dashboard
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run dashboard script
+        run: python dashboard.py
+
+      - name: Commit dashboard.json to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: .  # Wir veröffentlichen nur dashboard.json
+          keep_files: true
+          enable_jekyll: false
+          exclude_assets: |
+            index.html
