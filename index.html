@@ -16,6 +16,7 @@
     <thead>
       <tr>
         <th>Projekt</th>
+		<th>Beschreibung</th>
         <th>Version</th>
         <th>Veröffentlicht</th>
         <th>Download</th>
@@ -33,6 +34,7 @@
           const row = document.createElement('tr');
           row.innerHTML = `
             <td>${entry.exe}</td>
+		    <td>${entry.description}</td>
             <td>${entry.version}</td>
             <td>${new Date(entry.published).toLocaleString()}</td>
             <td><a href="${entry.download}">Download</a></td>
