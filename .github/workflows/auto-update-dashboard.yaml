@@ -29,8 +29,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .  # Wir veröffentlichen nur dashboard.json
+          publish_dir: dashboard # .  # Wir veröffentlichen nur dashboard.json
           keep_files: true
           enable_jekyll: false
-          exclude_assets: |
-            index.html
+          # exclude_assets: |
+          #   index.html
