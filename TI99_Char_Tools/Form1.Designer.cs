@@ -95,6 +95,7 @@ namespace TI99_Tools
             this.btn_Scan.TabIndex = 3;
             this.btn_Scan.Text = "scan";
             this.btn_Scan.UseVisualStyleBackColor = true;
+            this.btn_Scan.Click += new System.EventHandler(this.btn_Scan_Click);
             // 
             // label1
             // 
@@ -121,6 +122,7 @@ namespace TI99_Tools
             this.lst_Filenames.Name = "lst_Filenames";
             this.lst_Filenames.Size = new System.Drawing.Size(192, 508);
             this.lst_Filenames.TabIndex = 7;
+            this.lst_Filenames.SelectedIndexChanged += new System.EventHandler(this.lst_Filenames_SelectedIndexChanged);
             // 
             // Form1
             // 

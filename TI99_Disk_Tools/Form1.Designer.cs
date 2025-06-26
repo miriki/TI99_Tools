@@ -101,6 +101,7 @@ namespace TI99_Tools
             this.btn_Analyze.TabIndex = 8;
             this.btn_Analyze.Text = "Analyze";
             this.btn_Analyze.UseVisualStyleBackColor = true;
+            this.btn_Analyze.Click += new System.EventHandler(this.btn_Analyze_Click);
             // 
             // groupBox4
             // 
@@ -299,6 +300,7 @@ namespace TI99_Tools
             this.btn_Directory.TabIndex = 9;
             this.btn_Directory.Text = "Directory";
             this.btn_Directory.UseVisualStyleBackColor = true;
+            this.btn_Directory.Click += new System.EventHandler(this.btn_Directory_Click);
             // 
             // lst_Image_Directory
             // 
@@ -320,6 +322,7 @@ namespace TI99_Tools
             this.lst_Image_Files.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lst_Image_Files.Size = new System.Drawing.Size(337, 555);
             this.lst_Image_Files.TabIndex = 7;
+            this.lst_Image_Files.SelectedIndexChanged += new System.EventHandler(this.lst_Image_Files_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -346,6 +349,7 @@ namespace TI99_Tools
             this.btn_Scan.TabIndex = 10;
             this.btn_Scan.Text = "scan";
             this.btn_Scan.UseVisualStyleBackColor = true;
+            this.btn_Scan.Click += new System.EventHandler(this.btn_Scan_Click);
             // 
             // Form1
             // 

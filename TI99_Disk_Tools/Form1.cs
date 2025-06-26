@@ -533,6 +533,11 @@ namespace TI99_Tools
             Dsk_Directory();
         }
 
+        private void lst_Image_Files_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 
 }
