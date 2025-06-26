@@ -36,7 +36,7 @@ namespace TI99_Tools
             }
             else
             {
-                MessageBox.Show("Das Verzeichnis existiert nicht!", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Directory doesn't exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -156,10 +156,10 @@ namespace TI99_Tools
                         lbl_Font_Info.Text = $"Font: '{fontString}' for >{match1.Groups[3].Value} ({charCount}) characters starting at >{match1.Groups[2].Value} ({char1}) with >{match1.Groups[4].Value} ({bytesPerChar}) bytes per character";
                         filler = Convert.ToInt32(match1.Groups[5].Value, 16);
                         Debug.WriteLine("Header: " + fil_header);
-                        Debug.WriteLine($"Fontzeichenfolge : {fontString}");
-                        Debug.WriteLine($"Char1             : >{match1.Groups[2].Value} ({char1})");
-                        Debug.WriteLine($"CharCount         : >{match1.Groups[3].Value} ({charCount})");
-                        Debug.WriteLine($"Bytes pro Zeichen : >{match1.Groups[4].Value} ({bytesPerChar})");
+                        Debug.WriteLine($"Font name  : {fontString}");
+                        Debug.WriteLine($"1st char      : >{match1.Groups[2].Value} ({char1})");
+                        Debug.WriteLine($"Char count : >{match1.Groups[3].Value} ({charCount})");
+                        Debug.WriteLine($"Char len   : >{match1.Groups[4].Value} ({bytesPerChar})");
                         List<byte[]> fil_data = ParseDataLines(filteredLines);
                         // foreach (var b in fil_data)
                         // {
@@ -169,12 +169,12 @@ namespace TI99_Tools
                     }
                     else
                     {
-                        Console.WriteLine("Header-Zeile konnte nicht analysiert werden.");
+                        Console.WriteLine("Header couldn't be found or decoded");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Die ausgewählte Datei existiert nicht!", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("File doesn't exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

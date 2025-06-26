@@ -296,7 +296,7 @@ namespace TI99_Tools
             // 
             this.btn_Directory.Location = new System.Drawing.Point(716, 6);
             this.btn_Directory.Name = "btn_Directory";
-            this.btn_Directory.Size = new System.Drawing.Size(96, 23);
+            this.btn_Directory.Size = new System.Drawing.Size(96, 26);
             this.btn_Directory.TabIndex = 9;
             this.btn_Directory.Text = "Directory";
             this.btn_Directory.UseVisualStyleBackColor = true;
