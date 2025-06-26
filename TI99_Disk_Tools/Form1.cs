@@ -1,10 +1,15 @@
-using System;
-using System.Drawing.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace TI99_Disk_Tools
+namespace TI99_Tools
 {
     public partial class Form1 : Form
     {
@@ -529,4 +534,5 @@ namespace TI99_Disk_Tools
         }
 
     }
+
 }

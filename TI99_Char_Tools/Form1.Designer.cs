@@ -1,16 +1,19 @@
-﻿namespace TI99_Char_Tools
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace TI99_Tools
 {
     partial class Form1
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Erforderliche Designervariable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Verwendete Ressourcen bereinigen.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +23,11 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Vom Windows Form-Designer generierter Code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Erforderliche Methode für die Designerunterstützung.
+        /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
         /// </summary>
         private void InitializeComponent()
         {
@@ -40,7 +43,7 @@
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // tabControl1
             // 
@@ -146,11 +149,11 @@
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TextBox txt_Files_Directory;
@@ -162,3 +165,4 @@
         private ListBox lst_Filenames;
     }
 }
+

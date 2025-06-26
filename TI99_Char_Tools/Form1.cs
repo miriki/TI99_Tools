@@ -1,9 +1,23 @@
-﻿using static System.Windows.Forms.LinkLabel;
-using System.Text.RegularExpressions;
-using System.Diagnostics;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿// using static System.Windows.Forms.LinkLabel;
+// using System.Text.RegularExpressions;
+// using System.Diagnostics;
+// using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace TI99_Char_Tools
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TI99_Tools
+
 {
     public partial class Form1 : Form
     {
@@ -16,7 +30,7 @@ namespace TI99_Char_Tools
         private void btn_Scan_Click(object sender, EventArgs e)
         {
             string directoryPath = txt_Files_Directory.Text;
-            if (Directory.Exists(directoryPath))
+            if (    Directory.Exists(directoryPath))
             {
                 string[] chrFiles = Directory.GetFiles(directoryPath, "*.*", SearchOption.TopDirectoryOnly);
                 lst_Filenames.Items.Clear();
